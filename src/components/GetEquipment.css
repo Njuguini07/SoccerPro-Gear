@@ -1,0 +1,11 @@
+.equipment-image{
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+input.form-control {
+  width: 50%; 
+  margin: auto;
+}

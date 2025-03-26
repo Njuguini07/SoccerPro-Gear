@@ -1,0 +1,310 @@
+body {
+  background-color: #121212; /* Very dark grey for background */
+  color: #E0E0E0; /* Light grey text color for better readability */
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+}
+
+.App {
+  text-align: center;
+  background-color: #121212; /* Very dark grey for background */
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #1E1E1E; /* Darker grey background for header */
+  min-height: 10vh;
+  display: flex;
+  flex-direction: column;
+  align-items: right;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: #E0E0E0; /* Light grey text color */
+}
+
+/* Navigation bar */
+nav {
+  background-color: #1C1C1C; /* Dark grey background for navigation */
+  padding: 10px;
+  text-align: right;
+}
+
+/* Base style for links */
+.links {
+  padding: 2px 7px;
+  color: #ffffff; /* White text color for links */
+  text-decoration: none;
+  font-weight: 500;
+  border-radius: 7px;
+  transition: all 0.3s ease;
+  display: inline-block;
+  background-color: #000000; /* Medium dark grey background */
+  border: 2px solid #464444; /* Lighter grey border */
+  margin: 0 2px;
+}
+
+/* Hover effect for links */
+.links:hover {
+  color: #f8f9fa; /* Off-white color on hover */
+  background-color: #484848; /* Darker background on hover */
+  border-color: #888; /* Lighter grey border color on hover */
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4); /* More pronounced shadow */
+}
+
+/* Active link style */
+.links:active {
+  color: #ffffff; /* White color when the link is active */
+  background-color: #212121; /* Dark grey background on click */
+  border-color: #6c757d; /* Matching grey border */
+}
+
+/* Heading style */
+h1 {
+  text-align: center;
+  color: #E0E0E0; /* Light grey text color for heading */
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.footer {
+  background-color: #333; /* Dark background */
+  color: #fff; /* White text */
+  padding: 10px;
+  margin: 10px;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; /* Center items vertically */
+}
+
+.footer-left {
+  display: flex; /* Allow horizontal alignment of video and text */
+  align-items: center; /* Keep video and text aligned */
+}
+
+.footer-right {
+  display: flex; /* Align links horizontally */
+}
+
+.footer-right a {
+  color: #fff; /* White links */
+  text-decoration: none; /* No underline */
+  margin-right: 15px; /* Space between links */
+}
+
+.footer-right a:hover {
+  text-decoration: underline; /* Underline on hover */
+}
+
+.about-container {
+  padding: 20px;
+  max-width: 800px;
+  margin: auto;
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.about-header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.about-header h1 {
+  color: #000000; /* Bootstrap primary color */
+}
+
+h2 {
+  color: #333; /* Dark color for headings */
+  margin-top: 20px;
+}
+
+p {
+  line-height: 1.6;
+}
+
+ul {
+  list-style-type: square; /* Changes the bullet style */
+  padding-left: 20px;
+}
+
+.about-footer {
+  text-align: center;
+  margin-top: 30px;
+  font-weight: bold; /* Makes the footer text bold */
+}
+
+.contact-container {
+  padding: 20px;
+  max-width: 600px;
+  margin: auto;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  font-family: Arial, sans-serif;
+}
+
+.contact-header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.contact-header h1 {
+  color: #000000; /* Primary color */
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.label {
+  display: block; /* Ensures labels are above inputs */
+  margin-bottom: 5px;
+}
+
+input,
+textarea {
+  width: 100%; /* Ensures inputs take full width */
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+textarea {
+  height: 100px; /* Set height for the message textarea */
+}
+
+.submit-button {
+  background-color: #494949; /* Primary color */
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.submit-button:hover {
+  background-color: #1d1e1f; /* Darker shade on hover */
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.home-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.hero-banner {
+  background: url('/public/images/Img1.jpg') no-repeat center center/cover;
+  color: white;
+  text-align: center;
+  padding: 100px 20px;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-banner h1 {
+  font-size: 48px;
+  margin: 0;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.hero-banner p {
+  font-size: 24px;
+  margin: 20px 0;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+.cta-button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 15px 30px;
+  font-size: 20px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.product-carousel {
+  margin: 40px 0;
+  display: flex;           /* Flexbox for better layout */
+  flex-direction: column; /* Stack items vertically */
+  align-items: center;    /* Center carousel content */
+}
+
+.product-slide {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.product-slide img {
+  object-fit: cover;         /* Maintain the aspect ratio */
+  max-width: 200px;         /* Adjust to desired width */
+  height: auto;             /* Adjust height automatically */
+  border-radius: 8px;       /* Optional: rounded corners */
+  display: block;           /* Makes sure the image behaves correctly within flex */
+  margin: auto;             /* Center the image */
+}
+
+.product-carousel h2 {
+  text-align: center;
+}
+
+.buy-button {
+  background-color: #28a745;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+.promotion-section {
+  background-color: #f0f0f0;
+  padding: 20px;
+  text-align: center;
+  border-radius: 8px;
+}
+
+.promotion-button {
+  background-color: #ff5722;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 18px;
+}
+
+.home-footer {
+  text-align: center;
+  margin-top: 40px;
+}
