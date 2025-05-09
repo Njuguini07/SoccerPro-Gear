@@ -1,8 +1,8 @@
 body {
   background-color: #121212; /* Very dark grey for background */
-  color: #E0E0E0; /* Light grey text color for better readability */
+  color: #e0e0e0; /* Light grey text color for better readability */
   margin: 0;
-  font-family: 'Arial', sans-serif;
+  font-family: "Arial", sans-serif;
 }
 
 .App {
@@ -22,19 +22,28 @@ body {
 }
 
 .App-header {
-  background-color: #1E1E1E; /* Darker grey background for header */
-  min-height: 10vh;
+  background-color: #1e1e1e; /* Darker grey background for header */
+  min-height: 5px;
   display: flex;
   flex-direction: column;
   align-items: right;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: #E0E0E0; /* Light grey text color */
+  color: #e0e0e0; /* Light grey text color */
 }
-
+.header2 {
+  background-color: #ffffff; /* Darker grey background for header */
+  min-height: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: right;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: #000000; /* Light grey text color */
+}
 /* Navigation bar */
 nav {
-  background-color: #1C1C1C; /* Dark grey background for navigation */
+  background-color: #1c1c1c; /* Dark grey background for navigation */
   padding: 10px;
   text-align: right;
 }
@@ -72,7 +81,7 @@ nav {
 /* Heading style */
 h1 {
   text-align: center;
-  color: #E0E0E0; /* Light grey text color for heading */
+  color: #e0e0e0; /* Light grey text color for heading */
   font-size: 2em;
   margin-bottom: 20px;
 }
@@ -118,6 +127,18 @@ h1 {
   text-decoration: underline; /* Underline on hover */
 }
 
+/* Footer.css or App.css */
+.footer a {
+  text-decoration: none; /* Remove underline */
+  color: #ffffff; /* Default link color */
+  transition: transform 0.3s ease, color 0.3s ease; /* Smooth transition for movement and color change */
+}
+
+.footer a:hover {
+  transform: translateX(5px); /* Move the link 5px to the right on hover */
+  color: #ffffff; /* Change color on hover */
+}
+
 .about-container {
   padding: 20px;
   max-width: 800px;
@@ -125,7 +146,7 @@ h1 {
   font-family: Arial, sans-serif;
   background-color: #f9f9f9;
   border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .about-header {
@@ -221,7 +242,7 @@ textarea {
 }
 
 .hero-banner {
-  background: url('/public/images/Img1.jpg') no-repeat center center/cover;
+  background: url("/public/images/Img1.jpg") no-repeat center center/cover;
   color: white;
   text-align: center;
   padding: 100px 20px;
@@ -253,9 +274,9 @@ textarea {
 
 .product-carousel {
   margin: 40px 0;
-  display: flex;           /* Flexbox for better layout */
+  display: flex; /* Flexbox for better layout */
   flex-direction: column; /* Stack items vertically */
-  align-items: center;    /* Center carousel content */
+  align-items: center; /* Center carousel content */
 }
 
 .product-slide {
@@ -265,12 +286,12 @@ textarea {
 }
 
 .product-slide img {
-  object-fit: cover;         /* Maintain the aspect ratio */
-  max-width: 200px;         /* Adjust to desired width */
-  height: auto;             /* Adjust height automatically */
-  border-radius: 8px;       /* Optional: rounded corners */
-  display: block;           /* Makes sure the image behaves correctly within flex */
-  margin: auto;             /* Center the image */
+  object-fit: cover; /* Maintain the aspect ratio */
+  max-width: 200px; /* Adjust to desired width */
+  height: auto; /* Adjust height automatically */
+  border-radius: 8px; /* Optional: rounded corners */
+  display: block; /* Makes sure the image behaves correctly within flex */
+  margin: auto; /* Center the image */
 }
 
 .product-carousel h2 {
@@ -307,4 +328,47 @@ textarea {
 .home-footer {
   text-align: center;
   margin-top: 40px;
+}
+
+/* Dark Mode Styling */
+body.dark-mode {
+  background-color: #121212;
+  color: #ffffff;
+}
+
+body.dark-mode .card,
+body.dark-mode .form-control,
+body.dark-mode .btn {
+  background-color: #1e1e1e;
+  color: #fff;
+}
+
+.topbar {
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+
+.store-hours {
+  margin-top: 20px;
+}
+
+.store-hours h3 {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 1.2rem;
+  color: #333;
+  margin-bottom: 8px;
+}
+
+.store-hours ul {
+  list-style: none;
+  padding: 0;
+  color: #555;
+  font-size: 1rem;
+}
+
+.store-hours ul li {
+  margin-bottom: 4px;
 }
